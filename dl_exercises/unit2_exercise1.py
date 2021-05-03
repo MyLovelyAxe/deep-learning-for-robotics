@@ -5,7 +5,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 import matplotlib.pyplot as plt
 
-data = pd.read_csv('~/ai_ws/velocity_data.csv',sep=',',header=0)
+data = pd.read_csv('~/catkin_ws/src/velocity_data.csv',sep=',',header=0)
 
 t = data['field.header.stamp'].astype(float)
 t = t / data['field.header.stamp'].iloc[0]

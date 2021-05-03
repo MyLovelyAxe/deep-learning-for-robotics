@@ -8,7 +8,8 @@ from tensorflow.keras.layers import Dense
 import matplotlib.pyplot as plt
 from utilities import load_dataframe
 
-dataset = load_dataframe('/home/user/ai_ws/position_data.csv')
+
+dataset = load_dataframe('/home/user/catkin_ws/src/dlrepo/position_data.csv')
 input_coordinates = dataset[:,:-1]
 label = dataset[:,-1]
 
