@@ -29,19 +29,3 @@ def NN(X,Y):
     return model
 
 model = NN(X,Y)
-
-# do not run
-from utilities import plot_points_classes_predicted
-
-#PREDICT
-X_pred = np.array([[7,6],[4,7],[4,2]])
-output_pred = model.predict(X_pred)
-Y_pred=[]
-for labels in output_pred:
-    if labels<=0.5:
-        Y_pred.append(0.0)
-    else: Y_pred.append(1.0)
-Y_pred = np.array(Y_pred)
-
-#PLOT
-plot_points_classes_predicted(X,Y,X_pred,Y_pred)
